@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Примеры форм авторизации</title>
+    <meta name="description" content="Примеры форм авторизации с использованием CSS3" />
+    <meta name="keywords" content="login, form" />
+    <meta name="author" content="artTex" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <a href="#">
+                <strong>&laquo; Вернуться на главную страницу </strong>
+            </a>
+        </div>
+
+        <header>
+
+        </header>
+
+        <section class="main">
+            <div class="form-horizontal">
+                <span class="heading">Sign up/Register</span>
+            </div>
+
+            <div class="box">
+                <nav id="tabs" class="tabs">
+                    <a id="tabLogin" class="iconLogin active blueBox" title="Войти"></a>
+                    <a id="tabRegister" class="iconRegister greenBox" title="Регистрация"></a>
+                    <a id="tabForgot" class="iconForgot redBox" title="Забыл пароль?"></a>
+                </nav>
+
+                <div class="containerWrapper">
+
+                    <!-- login container -->
+                    <div id="containerLogin" class="tabContainer active">
+                        <div class="form_body">
+                            <form class="form-5 clearfix">
+                                <p>
+                                    <input type="text" id="login" name="login" placeholder="Логин">
+                                    <input type="password" name="password" id="password" placeholder="Пароль">
+                                </p>
+                                <button type="submit" name="submit">
+                                    <i class="icon-arrow-right"></i>
+                                    <span>Вход</span>
+                                </button>
+                            </form>
+                            <div class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="main-checkbox">
+                                        <input type="checkbox" value="none" id="checkbox1" name="check"/>
+                                        <label for="checkbox1"></label>
+                                    </div>
+                                    <span class="text">Запомнить</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- register container -->
+                    <div id="containerRegister" class="tabContainer">
+                        <form action="do some action here!">
+                            <h2 class="loginTitle">Регистрация</h2>
+                            <div class="registerContent">
+                                <div class="inputWrapper">
+                                    <input type="text" placeholder="Ваше имя" />
+                                </div>
+                                <div class="inputWrapper">
+                                    <input type="password" placeholder="Ваш email"/>
+                                </div>
+                            </div>
+                            <button class="greenBox"><span class="iconRegister"></span> Зарегистрироваться</button>
+                            <div class="clear"></div>
+                        </form>
+                    </div>
+                    <div class="clear"></div>
+
+                    <!-- forgot container -->
+                    <div id="containerForgot" class="tabContainer">
+                        <form action="do some action here!">
+                            <h2 class="loginTitle">Восстановления пароля</h2>
+                            <div class="loginContent">
+                                <div class="inputWrapper">
+                                    <input type="text" placeholder="Ваш email" />
+                                </div>
+                                <div class="placeholder"></div>
+                            </div>
+                            <button class="redBox"><span class="iconForgot"></span> Восстановить</button>
+                            <div class="clear"></div>
+                        </form>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+
+        </section>
+
+    </div>
+    <!-- jQuery if needed -->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,506 @@
+@import url('demo.css');
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Handlee);
+body {
+    background: #eedfcc url("../images/bg3.jpg") no-repeat center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+.container > header h1,
+.container > header h2 {
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+}
+/* GLOBALS */
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+[class^="icon"], [class*=" icon"] {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+}
+
+.iconLogin:before {
+    font-family: FontAwesome;
+    content: "\f090";
+}
+
+.iconRegister:before {
+    font-family: FontAwesome;
+    content: "\f067";
+}
+
+.iconForgot:before {
+    font-family: FontAwesome;
+    content: "\f128";
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.form_body {
+    display: inline-block;
+    width: 320px;
+    height: 100%;
+}
+
+.form-horizontal {
+    display: inline-block;
+    width: 100%;
+}
+
+.form-horizontal .heading{
+    display: block;
+    font-size: 35px;
+    font-weight: 700;
+    padding: 35px 0;
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-horizontal .fa-question-circle{
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    right: 60px;
+    font-size: 20px;
+    color: #808080;
+    transition: all 0.5s ease 0s;
+}
+.form-horizontal .fa-question-circle:hover{
+    color: #000;
+}
+.form-horizontal .main-checkbox{
+    float: left;
+    width: 20px;
+    height: 20px;
+    background: #11a3fc;
+    border-radius: 50%;
+    position: relative;
+    margin: 5px 0 0 10px;
+    border: 1px solid #11a3fc;
+}
+.form-horizontal .main-checkbox label{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+.form-horizontal .main-checkbox label:after{
+    content: "";
+    width: 10px;
+    height: 5px;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    border: 3px solid #fff;
+    border-top: none;
+    border-right: none;
+    background: transparent;
+    opacity: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.form-horizontal .main-checkbox input[type=checkbox]{
+    visibility: hidden;
+}
+.form-horizontal .main-checkbox input[type=checkbox]:checked + label:after{
+    opacity: 1;
+}
+
+.form-horizontal .text{
+    float: left;
+    margin-left: 7px;
+    line-height: 20px;
+    padding-top: 5px;
+    text-transform: capitalize;
+}
+
+.form-5 {
+    /* Size and position */
+    width: 300px;
+    margin: 60px auto 30px;
+    position: relative;
+
+    /* Styles */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1), 0 3px 2px rgba(0,0,0,0.1);
+}
+
+.form-5 p {
+    width: 70%;
+    float: left;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #fff;
+    border-right: none;
+}
+
+.form-5 input[type=text],
+.form-5 input[type=password] {
+    /* Size and position */
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+
+    /* Styles */
+    border: none; /* Remove the default border */
+    background: white; /* Fallback */
+    background: rgba(255,255,255,0.2);
+    box-shadow: 
+        inset 0 0 10px rgba(255,255,255,0.5);
+
+    /* Font styles */
+    font-family: 'Montserrat', sans-serif;
+    text-indent: 10px;
+    color: #ee4c8d;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    font-size: 20px;       
+}
+
+.form-5 input[type=text] {
+    border-bottom: 1px solid #fff; /* Fallback */
+    border-bottom: 1px solid rgba(255,255,255,0.7);
+    border-radius: 5px 0 0 0;
+}
+
+.form-5 input[type=password] {
+    border-top: 1px solid #CCC; /* Fallback */
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-radius: 0 0 0 5px;
+}
+
+.form-5 input[type=text]:hover,
+.form-5 input[type=password]:hover,
+.form-5 input[type=text]:focus,
+.form-5 input[type=password]:focus {
+    background: #f7def7; /* Fallback */
+    background: rgba(255,255,255,0.4);
+    outline: none;
+}
+
+/* Placeholder style (from http://stackoverflow.com/questions/2610497/change-an-inputs-html5-placeholder-color-with-css) */
+
+.form-5 input::-webkit-input-placeholder {
+    color: #fff;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.4);
+    font-family: 'Handlee', cursive;
+}
+
+.form-5 input:-moz-placeholder {
+    color: #fff;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.4);
+    font-family: 'Handlee', cursive;
+}
+
+.form-5 input:-ms-input-placeholder {
+    color: #fff;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.4);
+    font-family: 'Handlee', cursive;
+}
+
+.form-5 button {
+    /* Size and position */
+    width: 30%;
+    height: 102px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+
+    /* Styles */
+    background: #ee4c8d;
+    background: url(../images/noise.png), -moz-radial-gradient(center, ellipse cover, #ee4c8d 0%, #b53467 100%);
+    background: url(../images/noise.png), -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ee4c8d), color-stop(100%,#b53467));
+    background: url(../images/noise.png), -webkit-radial-gradient(center, ellipse cover, #ee4c8d 0%,#b53467 100%);
+    background: url(../images/noise.png), -o-radial-gradient(center, ellipse cover, #ee4c8d 0%,#b53467 100%);
+    background: url(../images/noise.png), -ms-radial-gradient(center, ellipse cover, #ee4c8d 0%,#b53467 100%);
+    background: url(../images/noise.png), radial-gradient(ellipse at center, #ee4c8d 0%,#b53467 100%);
+
+    border-radius: 0 5px 5px 0;
+    box-shadow:
+        inset 0 0 4px rgba(255, 255, 255, 0.7), 
+        inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-left: 1px solid silver;
+    cursor: pointer;  
+    line-height: 102px; /* Same as height */
+}
+
+.form-5 button i {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -20px;
+    font-size: 64px;
+    line-height: 109px;
+    color: #8d1645;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.4);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.form-5 button span {
+    display: block;
+
+    /* Font styles */ 
+    color: #8d1645;
+    font-family: 'Montserrat', Arial, sans-serif; 
+    font-size: 20px;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.4);
+
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    -webkit-backface-visibility: hidden;
+}
+
+/* Focus and hover on button */
+
+.form-5 button:focus {
+    outline: none;
+}
+
+.form-5 button:hover span,
+.form-5 button:focus span {
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transform: rotate(-90deg) translateY(-20px);
+    -moz-transform: rotate(-90deg) translateY(-20px);
+    -ms-transform: rotate(-90deg) translateY(-20px);
+    -o-transform: rotate(-90deg) translateY(-20px);
+    transform: rotate(-90deg) translateY(-20px);
+}
+
+.form-5 button:hover i,
+.form-5 button:focus i {
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    left: 0;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    -ms-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+/* Click on button */
+
+.form-5 button:active span,
+.form-5 button:active i {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none; 
+}
+
+.form-5 button:active span {
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.form-5 button:active i {
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    left: 0;
+    color: #fff;
+}
+
+.box {
+    width: 420px;
+    margin: 120px auto;
+    position: relative;
+    z-index: 1;
+}
+
+.tabs {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: -34px;
+}
+.tabs a {
+    position: relative;
+    height: 30px;
+    width: 36px;
+    display: block;
+    margin-bottom: 10px;
+    padding-top: 3px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    -webkit-box-shadow: 0 0 2px #1a1a1a;
+    -moz-box-shadow: 0 0 2px #1a1a1a;
+    box-shadow: 0 0 2px #1a1a1a;
+}
+.tabs a.active, .tabs a:hover {
+    margin-left: -3px;
+}
+.tabs a:before {
+    font-size: 14px;
+    color: white;
+    padding-left: 10px;
+}
+
+.blueBox {
+    color: white;
+    border: solid 1px #0083ff;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0083ff), color-stop(100%, #0073e0));
+    background: -webkit-linear-gradient(#0083ff, #0073e0);
+    background: -moz-linear-gradient(#0083ff, #0073e0);
+    background: -o-linear-gradient(#0083ff, #0073e0);
+    background: linear-gradient(#0083ff, #0073e0);
+    cursor:pointer;
+}
+
+.greenBox {
+    color: white;
+    border: solid 1px #57c100;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #58c400), color-stop(100%, #4aa500));
+    background: -webkit-linear-gradient(#58c400, #4aa500);
+    background: -moz-linear-gradient(#58c400, #4aa500);
+    background: -o-linear-gradient(#58c400, #4aa500);
+    background: linear-gradient(#58c400, #4aa500);
+    cursor:pointer;
+}
+
+.redBox {
+    color: white;
+    border: solid 1px #e50000;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e50000), color-stop(100%, #c90000));
+    background: -webkit-linear-gradient(#e50000, #c90000);
+    background: -moz-linear-gradient(#e50000, #c90000);
+    background: -o-linear-gradient(#e50000, #c90000);
+    background: linear-gradient(#e50000, #c90000);
+    cursor:pointer;
+}
+
+.redBox:hover, .greenBox:hover, .blueBox:hover {opacity:0.9;}
+
+.containerWrapper {
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+    height: 350px;
+    -webkit-box-shadow: 0 0 5px black;
+    -moz-box-shadow: 0 0 5px black;
+    box-shadow: 0 0 5px black;
+}
+
+.tabContainer {
+    height: 350px;
+    display: none;
+    border: solid 1px white;
+    padding: 20px;
+    /*background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dddddd));*/
+    /*background-image: -webkit-linear-gradient(#ffffff, #dddddd);*/
+    /*background-image: -moz-linear-gradient(#ffffff, #dddddd);*/
+    /*background-image: -o-linear-gradient(#ffffff, #dddddd);*/
+    /*background-image: linear-gradient(#ffffff, #dddddd);*/
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+.tabContainer.active {
+    display: block;
+}
+
+.loginTitle {
+    color: #4d4d4d;
+    margin: 0 0 20px 0;
+    padding: 0 0 15px 0;
+    border-bottom: solid 1px #e6e6e6;
+    text-shadow: 1px 1px 0 white;
+}
+
+.placeholder {
+    height: 32px;
+    margin-bottom: 20px;
+}
+
+.inputWrapper {
+    height: 32px;
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+}
+.inputWrapper:before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-left: solid 1px #cccccc;
+    border-right: solid 1px #cccccc;
+    border-bottom: solid 1px #cccccc;
+}
+
+form h2 {font-family:Tahoma;}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    color: #4d4d4d;
+    position: relative;
+    height: 32px;
+    line-height: 32px;
+    border: none;
+    background: none;
+    padding: 0 10px;
+    font-size: 16px;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+input[type=text]:focus, input[type=password]:focus {
+    outline: none;
+    border: none;
+    border: 1px solid #cccccc;
+}
+
+button {
+    float: right;
+    color: white;
+    height: 32px;
+}
