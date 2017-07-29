@@ -9,7 +9,7 @@
     <meta name="keywords" content="login, form" />
     <meta name="author" content="artTex" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
 </head>
@@ -41,8 +41,9 @@
 
                     <!-- login container -->
                     <div id="containerLogin" class="tabContainer active">
+                        <h2 class="loginTitle">Sign Up</h2>
                         <div class="form_body">
-                            <form class="form-5 clearfix">
+                            <form class="form-5 clearfix" action="">
                                 <p>
                                     <input type="text" id="login" name="login" placeholder="Логин">
                                     <input type="password" name="password" id="password" placeholder="Пароль">
@@ -61,13 +62,23 @@
                                     <span class="text">Запомнить</span>
                                 </div>
                             </div>
+                            <div class="main-signin__foot">
+                                <div class="foot__left">
+                                    <p>Войти через:</p>
+                                </div>
+                                <div class="foot__right">
+                                    <a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <!-- register container -->
                     <div id="containerRegister" class="tabContainer">
-                        <form action="do some action here!">
-                            <h2 class="loginTitle">Регистрация</h2>
+                        <form action="" >
+                            <h2 class="loginTitle">Register</h2>
                             <div class="registerContent">
                                 <div class="inputWrapper">
                                     <input type="text" placeholder="Ваше имя" />
@@ -84,8 +95,8 @@
 
                     <!-- forgot container -->
                     <div id="containerForgot" class="tabContainer">
-                        <form action="do some action here!">
-                            <h2 class="loginTitle">Восстановления пароля</h2>
+                        <form action="">
+                            <h2 class="loginTitle">Restore password</h2>
                             <div class="loginContent">
                                 <div class="inputWrapper">
                                     <input type="text" placeholder="Ваш email" />
@@ -106,8 +117,9 @@
     </div>
     <!-- jQuery if needed -->
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script src="js/custom.js"></script>
     <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/index.js"></script>
 
 </body>
 </html>

@@ -1,6 +1,5 @@
 @import url('demo.css');
 
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Handlee);
 body {
     background: #eedfcc url("../images/bg3.jpg") no-repeat center top;
     -webkit-background-size: cover;
@@ -64,6 +63,7 @@ body {
 .form-horizontal {
     display: inline-block;
     width: 100%;
+    padding: 0px 15px;
 }
 
 .form-horizontal .heading{
@@ -139,7 +139,7 @@ body {
 .form-5 {
     /* Size and position */
     width: 300px;
-    margin: 60px auto 30px;
+    margin: 0px auto 30px;
     position: relative;
 
     /* Styles */
@@ -153,6 +153,7 @@ body {
     border-radius: 5px 0 0 5px;
     border: 1px solid #fff;
     border-right: none;
+    margin: 0;
 }
 
 .form-5 input[type=text],
@@ -371,6 +372,7 @@ body {
     -webkit-box-shadow: 0 0 2px #1a1a1a;
     -moz-box-shadow: 0 0 2px #1a1a1a;
     box-shadow: 0 0 2px #1a1a1a;
+    text-decoration: unset;
 }
 .tabs a.active, .tabs a:hover {
     margin-left: -3px;
@@ -424,6 +426,31 @@ body {
     -webkit-box-shadow: 0 0 5px black;
     -moz-box-shadow: 0 0 5px black;
     box-shadow: 0 0 5px black;
+    background: #eedfcc url(../images/bg3.jpg) no-repeat center
+}
+
+.main-signin__foot {
+    border-radius: 0 0 10px 10px;
+    float: left;
+    padding: 12px 0;
+    width: 100%;
+}
+.main-signin__foot .foot__left {
+    float: left;
+    padding: 0 0 0 6%;
+}
+.main-signin__foot .foot__left p {
+    color: #333;
+    margin: 0;
+    padding: 5px 0 0 0;
+    text-transform: uppercase;
+}
+.main-signin__foot .foot__right {
+    float: left;
+}
+
+.main-signin__foot .foot__right a {
+    margin: 0px 10px;
 }
 
 .tabContainer {
