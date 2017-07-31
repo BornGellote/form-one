@@ -77,35 +77,38 @@
 
                     <!-- register container -->
                     <div id="containerRegister" class="tabContainer">
-                        <form action="" >
-                            <h2 class="loginTitle">Register</h2>
-                            <div class="registerContent">
-                                <div class="inputWrapper">
-                                    <input type="text" placeholder="Ваше имя" />
-                                </div>
-                                <div class="inputWrapper">
-                                    <input type="password" placeholder="Ваш email"/>
-                                </div>
-                            </div>
-                            <button class="greenBox"><span class="iconRegister"></span> Зарегистрироваться</button>
-                            <div class="clear"></div>
-                        </form>
+                        <h2 class="loginTitle">Register</h2>
+                        <div class="form_body">
+                            <form class="form-5 form_reg clearfix" action="">
+                                <p>
+                                    <input type="text" id="reg_name" name="reg_name" placeholder="Ваше имя">
+                                    <input type="password" id="reg_pass" name="reg_pass" placeholder="Ваш пароль">
+                                    <input type="text" id="reg_mail" name="reg_mail" placeholder="Ваш email">
+                                    <input type="text" id="reg_phone" name="reg_phone" placeholder="Ваш телефон">
+                                </p>
+                                <button type="submit" name="submit">
+                                    <i class="icon-arrow-right"></i>
+                                    <span>Register</span>
+                                </button>
+                            </form>
+                        </div>
                     </div>
                     <div class="clear"></div>
 
                     <!-- forgot container -->
                     <div id="containerForgot" class="tabContainer">
-                        <form action="">
-                            <h2 class="loginTitle">Restore password</h2>
-                            <div class="loginContent">
-                                <div class="inputWrapper">
-                                    <input type="text" placeholder="Ваш email" />
-                                </div>
-                                <div class="placeholder"></div>
-                            </div>
-                            <button class="redBox"><span class="iconForgot"></span> Восстановить</button>
-                            <div class="clear"></div>
-                        </form>
+                        <h2 class="loginTitle">Restore password</h2>
+                        <div class="form_body">
+                            <form class="form-5 form_restore clearfix" action="">
+                                <p>
+                                    <input type="text" id="rest_mail" name="rest_mail" placeholder="Ваш email">
+                                </p>
+                                <button type="submit" name="submit">
+                                    <i class="icon-arrow-right"></i>
+                                    <span>Restore</span>
+                                </button>
+                            </form>
+                        </div>
                     </div>
                     <div class="clear"></div>
                 </div>

@@ -147,6 +147,8 @@ body {
     box-shadow: 0 0 5px rgba(0,0,0,0.1), 0 3px 2px rgba(0,0,0,0.1);
 }
 
+.form_restore{ box-shadow: unset;}
+
 .form-5 p {
     width: 70%;
     float: left;
@@ -155,6 +157,9 @@ body {
     border-right: none;
     margin: 0;
 }
+
+.form_restore p { margin: 25px 0px 0px;}
+.form_reg button{ height: 202px !important; }
 
 .form-5 input[type=text],
 .form-5 input[type=password] {
@@ -229,12 +234,12 @@ body {
 
     /* Styles */
     background: #ee4c8d;
-    background: url(../images/noise.png), -moz-radial-gradient(center, ellipse cover, #ee4c8d 0%, #b53467 100%);
-    background: url(../images/noise.png), -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ee4c8d), color-stop(100%,#b53467));
-    background: url(../images/noise.png), -webkit-radial-gradient(center, ellipse cover, #ee4c8d 0%,#b53467 100%);
-    background: url(../images/noise.png), -o-radial-gradient(center, ellipse cover, #ee4c8d 0%,#b53467 100%);
-    background: url(../images/noise.png), -ms-radial-gradient(center, ellipse cover, #ee4c8d 0%,#b53467 100%);
-    background: url(../images/noise.png), radial-gradient(ellipse at center, #ee4c8d 0%,#b53467 100%);
+    background: url("../images/noise.png"), -moz-radial-gradient(center, ellipse cover, #ee4c8d 0%, #b53467 100%);
+    background: url("../images/noise.png"), -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ee4c8d), color-stop(100%,#b53467));
+    background: url("../images/noise.png"), -webkit-radial-gradient(center, ellipse cover, #ee4c8d 0%,#b53467 100%);
+    background: url("../images/noise.png"), -o-radial-gradient(center, ellipse cover, #ee4c8d 0%,#b53467 100%);
+    background: url("../images/noise.png"), -ms-radial-gradient(center, ellipse cover, #ee4c8d 0%,#b53467 100%);
+    background: url("../images/noise.png"), radial-gradient(ellipse at center, #ee4c8d 0%,#b53467 100%);
 
     border-radius: 0 5px 5px 0;
     box-shadow:
