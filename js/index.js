@@ -6,4 +6,4 @@ $("#tabs").on("click", "a", function(){
   $("#" + me.attr("id").replace("tab", "container")).addClass("active");
   return false;
 });
-$('input, textarea').placeholder();
+

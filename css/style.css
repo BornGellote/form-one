@@ -48,6 +48,21 @@ body {
     content: "\f128";
 }
 
+.iconUser:before {
+    font-family: FontAwesome;
+    content: "\f007";
+}
+
+.iconProfile:before {
+    font-family: FontAwesome;
+    content: "\f234";
+}
+
+.iconSetting:before {
+    font-family: FontAwesome;
+    content: "\f0ad";
+}
+
 .clearfix:after {
     content: "";
     display: table;
@@ -421,7 +436,18 @@ body {
     cursor:pointer;
 }
 
-.redBox:hover, .greenBox:hover, .blueBox:hover {opacity:0.9;}
+.greyBox {
+    color: white;
+    border: solid 1px #d4d3db;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d4d3db), color-stop(100%, #b5bac9));
+    background: -webkit-linear-gradient(#d4d3db, #b5bac9);
+    background: -moz-linear-gradient(#d4d3db, #b5bac9);
+    background: -o-linear-gradient(#d4d3db, #b5bac9);
+    background: linear-gradient(#d4d3db, #b5bac9);
+    cursor:pointer;
+}
+.redBox:hover, .greenBox:hover, .blueBox:hover, .greyBox:hover {opacity:0.9;}
+
 
 .containerWrapper {
     position: relative;
@@ -535,4 +561,30 @@ button {
     float: right;
     color: white;
     height: 32px;
+}
+
+
+/*ADMIN PANEL*/
+.admin_panel form.exit {
+    float: right;
+}
+form.exit h1 {
+    float: left;
+}
+
+.admin_panel .containerWrapper,.admin_panel .tabContainer {
+    height: 415px;
+}
+
+.admin_panel .form_body {
+   width: 100%;
+}
+
+.admin_panel .form_edit button {
+    height: 252px;
+}
+
+form.exit input.btn.btn-info {
+    margin: 22px 15px 0px;
+    /*float: right;*/
 }
